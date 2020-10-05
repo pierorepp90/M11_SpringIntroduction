@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "e61e6ff8-535e-4a8c-9c33-eaaa905b299c",
+		"name": "M11_Spring introduction",
+		"description": "First Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fase 1",
+			"item": [
+				{
+					"name": "First Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.eu/rest/v2/lang/es",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"eu"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"lang",
+								"es"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Fase 2",
+			"item": [
+				{
+					"name": "Get HELLO WORLD",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								""
+							]
+						},
+						"description": "Request 1 fase 2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hello, <NOM>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Piero",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Piero"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Fase 3",
+			"item": [
+				{
+					"name": "Get IP:port",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								""
+							]
+						},
+						"description": "Request 1 fase 3"
+					},
+					"response": []
+				},
+				{
+					"name": "Get IP:port/pathVar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/Jonatan",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"Jonatan"
+							]
+						},
+						"description": "Request 2 fase 3"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1324eeab-476d-453e-8faa-2c29d9afc8f0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7759551a-2d20-4b2a-a789-a1e76585aa14",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
